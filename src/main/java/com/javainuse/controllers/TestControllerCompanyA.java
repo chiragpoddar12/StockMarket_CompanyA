@@ -27,7 +27,7 @@ public class TestControllerCompanyA {
 		cmp.setSharesDoublesWhen(500);
 		return cmp;
 	}
-	@RequestMapping(value = "/companyA", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/ABC", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ResponseUpgrade> update(@RequestBody ResponseUpgrade response) {
 //	    ResponseUpgrade response= null;
 		if (response != null) {
@@ -65,7 +65,6 @@ public class TestControllerCompanyA {
 				st3.executeUpdate(t);
 				st3.close();
 				conn.close();
-			
 	    	} catch (SQLException e) {
 	    
 				// TODO Auto-generated catch block
