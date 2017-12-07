@@ -18,16 +18,16 @@ import com.javainuse.model.Company;;
 @RestController
 public class TestControllerCompanyA {
 
-	@RequestMapping(value = "/companyA", method = RequestMethod.GET)
+	@RequestMapping(value = "/VERSION1", method = RequestMethod.GET)
 	public Company firstPage() {
 		Company cmp = new Company();
-		cmp.setName("ABC");
+		cmp.setName("VERSION1");
 		cmp.setNumberOfShares(1000);
 		cmp.setPriceOfShares(50);
 		cmp.setSharesDoublesWhen(500);
 		return cmp;
 	}
-	@RequestMapping(value = "/ABC", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/VERSION1", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ResponseUpgrade> update(@RequestBody ResponseUpgrade response) {
 //	    ResponseUpgrade response= null;
 		if (response != null) {
